@@ -20,6 +20,7 @@ const Signup = () => {
       [e.target.name]: e.target.value
     });
   };
+  
 
   const validateForm = () => {
     let errors = {};
