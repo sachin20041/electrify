@@ -1,0 +1,119 @@
+.appliance-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items at the top, allowing scroll */
+    min-height: 100vh; /* Ensures the container can expand with content */
+    padding: 20px; /* Adds padding around the form */
+    background-image: url(../images/form-bg.jpg);
+    background-color: rgb(57, 57, 57);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow-y: auto; /* Enables vertical scrolling when content exceeds viewport */
+}
+
+.appliance-form {
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    margin: 20px 0;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.appliance-form h2 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.checkbox-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 5px 0;
+}
+
+label {
+    color: #fff;
+    font-weight: bold;
+    width: 70%;
+}
+
+input[type="checkbox"] {
+    position: relative;
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+input[type="number"] {
+    width: calc(100% - 50px);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-left: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.calculated-bill {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+
+.results {
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.results h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.results h4 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.suggestions-card {
+    background-color: rgba(255, 255, 255, 0.1); /* Light overlay for the card */
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+@media (max-width: 600px) {
+    .appliance-form {
+        width: 90%;
+    }
+
+    input[type="number"] {
+        width: 80%;
+    }
+}

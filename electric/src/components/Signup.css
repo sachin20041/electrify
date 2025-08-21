@@ -1,0 +1,80 @@
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('../images/signup-bg.jpg'); /* Add the URL to your image here */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #f5f5f5;
+}
+
+.signup-box {
+  background-color: rgba(52, 52, 52, 0.7); /* Slight transparency for blur effect */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  backdrop-filter: blur(1px); /* Add blur effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  color: #fff; /* Change text color to white */
+}
+
+.signup-box h2 {
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+label {
+  font-weight: bold;
+  color: #ddd; /* Make label text white */
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745; /* Green button */
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+.input-error {
+  border-color: red;
+}
+
+.error-text {
+  color: red;
+  font-size: 12px;
+}
+
+/* Add some basic responsive design */
+@media (max-width: 600px) {
+  .signup-box {
+      width: 90%;
+  }
+}

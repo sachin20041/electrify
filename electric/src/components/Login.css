@@ -1,0 +1,99 @@
+/* Center the login form and style the box */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ef0000;
+    background-image: url('../images/login-bg.jpg');
+  }
+ 
+  .login-box {
+    background-color: rgba(52, 52, 52, 0.7); /* Slightly transparent for the blur effect */
+    padding: 30px;
+    border-radius: 10px;
+    height: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    color: #ddd;
+    backdrop-filter: blur(2px); /* Add blur effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+}
+  
+  .login-box h2 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+    color: #ffffff;
+  }
+  
+  label {
+    font-weight: bold;
+    color: #ddd;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
+  .error-message {
+    color: red;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  
+  @media (max-width: 600px) {
+    .login-box {
+      width: 90%;
+    }
+  }
+  .bt2 {
+    margin-top: 10px;
+    /* Signup button background */
+    border: none;
+    padding: 10px;
+    width: 100%;
+    color: #fff; /* Button text color */
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    display: block;
+}
+.bt2 a {
+  color: #fff; /* Make the link text white */
+  text-decoration: none;
+}
+
+.bt2 a:hover {
+  color: #ddd; /* Change text color on hover */
+}

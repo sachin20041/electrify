@@ -1,0 +1,80 @@
+body {
+    margin: 0; /* Remove default margin */
+    background-color: rgb(52, 52, 52); /* Set the overall background color */
+}
+.cardfile-wrapper {
+    padding: 0px;
+}
+
+.heading {
+    margin-top: 100px;
+    margin-left:20px;
+    font-size: 3.8rem;
+    font-weight: bold;
+    color: #15b3bb;
+    text-align: left; /* Aligns the heading to the left */
+     /* Adds space between the heading and the cards */
+}
+
+.cardfile-container {
+    display: flex;
+    justify-content: center; /* Centers the cards horizontally */
+    align-items: center; /* Centers the cards vertically (if container has height) */
+    gap: 40px; /* Adds space between the two cards */
+    padding: 20px;
+    min-height: 100vh; /* Optional: sets a minimum height for full-screen centering */
+}
+
+.card {
+    width: 350px;
+    
+    height: 450px; /* Height remains the same */
+    background-color: #2d2a2a;
+    color: aqua;
+    border-radius: 15px; /* Adds rounded corners */
+    box-shadow: 0 4px 32px rgba(9, 218, 183, 0.2); /* Adds subtle shadow */
+    margin:30px;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: space-between; /* Ensure button is at the bottom */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slightly enlarges on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+}
+
+.explore-button {
+    background-color: #00c8ff;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.explore-button:hover {
+    background-color: #009ad6;
+     
+}
+button a{
+    text-decoration: none;
+    color: inherit;
+}
+
+@media (max-width: 768px) {
+    .cardfile-container {
+        flex-direction: column; /* Stacks the cards vertically on smaller screens */
+    }
+
+    .card {
+        width: 90%; /* Responsive card width for smaller devices */
+        margin-bottom: 20px;
+    }
+}
